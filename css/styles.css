@@ -1,0 +1,160 @@
+:root{
+
+--fuentePrincipal: "Arima", system-ui;
+--colorPrincipal : #990033;
+--colorNavegacion: #CC0033;
+--tituloNav: #a2d9ce;
+--colorh1: #003333 ;
+--negro: #000000;
+--blanco:#fdfefe;
+
+
+
+
+
+}
+
+html{
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+
+    font-size: 16px;
+    background-color: var(--colorPrincipal);
+    font-family: var(--fuentePrincipal);
+}
+h1{
+
+    color: var(--colorh1);
+    text-align: center;
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
+}
+
+/*Logo*/
+header{
+
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0 1rem 0;
+}
+.box{ /*el rectangulo que abarca la imagen*/
+
+    width: 40rem;
+    height: 15rem;
+    overflow: hidden; /*Todo lo que sobresalga de la caja rectangular no se va a ver*/
+ 
+}
+.box img{
+
+height: 100%; /*que dentro del rectangulo se vea el 100% de la imágen(el width:100% está arriba en.img)*/
+object-fit: cover; /*para que no se deforme la imágen*/
+
+}
+/*Navegación*/
+.navegacion{
+
+background-color: var(--colorNavegacion);
+padding: 1rem;
+display: flex;
+justify-content: center;
+gap: 5rem;
+
+}
+.navegacion a{
+
+text-decoration: none;
+color: var(--tituloNav);
+font-size: 3rem;
+
+
+}
+
+/*Main*/
+.contenedor{
+
+max-width: 120rem;
+margin: 0 auto;
+
+}
+
+.discografia{
+    
+    display: grid;
+  grid-template-columns: 1fr;
+ 
+    
+    }
+
+
+@media (min-width: 768px){
+     
+    .discografia{
+    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+    }
+}
+
+
+.card{
+
+    background-color: var(--colorNavegacion);
+    padding: 2rem;
+
+}
+.titulo{
+
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blanco);
+  
+}
+.lanzamiento{
+
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--colorh1);
+}
+
+.imagenes{
+
+    
+
+
+}
+.blankspace{
+
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../img/blankspace.png);
+    background-repeat: no-repeat;
+   
+    
+
+}
+.lwymmd{
+
+
+
+}
+
+/*Footer*/
+footer{
+
+font-size: 2.1rem;
+color: var(--negro);
+text-align: center;
+text-transform: uppercase;
+margin-top: 2rem;
+
+}
