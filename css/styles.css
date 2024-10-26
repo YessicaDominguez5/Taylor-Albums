@@ -196,33 +196,60 @@ text-transform: uppercase;
 margin-top: 2rem;
 
 }
+
 .erasTour{
 
-display: grid;
-grid-template-rows: repeat(2, auto);
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+
 
 
 }
+
 @media (min-width: 768px){
+    
     .erasTour{
 
-      
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
-        
-        
-        }
+        column-gap: 3rem;
+    
+    }
+
+}
+
+.contenido{
+
+    margin-top: 5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin:2rem;
+}
+
+
+@media (min-width: 768px){
+    .contenido{
+
+        margin-left: 20rem;
+    
+    }
 }
 .poster{
 
+    /*clip-path: inset(3% 5% 25% 5%); recortar imágen*/
+    
     grid-row: 1/2;
+    align-items: center;
+    border-style: outset;
+    border-width: .3rem;
+
+
 }
+
 @media (min-width: 768px){
+     .poster{
 
-    .poster{
-
-        grid-row: 2/3;
-    } 
-
-  
+        grid-column: 2/3;
+        width: 70%;
+     height: 80%;
+     }
 }
