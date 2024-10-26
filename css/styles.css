@@ -7,6 +7,8 @@
 --colorh1: #003333 ;
 --negro: #000000;
 --blanco:#fdfefe;
+--submit: #f4d03f;
+--sombrasubmit:#dab419;
 
 
 
@@ -28,6 +30,7 @@ body{
     font-size: 16px;
     background-color: var(--colorPrincipal);
     font-family: var(--fuentePrincipal);
+    min-width: 350px;
 }
 h1{
 
@@ -38,9 +41,10 @@ h1{
 img{
     width: 100%;
 }
-p{
+span{
 
-
+    color: var(--negro);
+    font-size: 2rem;
 }
 
 /*Logo*/
@@ -197,6 +201,8 @@ margin-top: 2rem;
 
 }
 
+/*Página Eras Tour*/
+
 .erasTour{
 
     display: grid;
@@ -253,3 +259,111 @@ margin-top: 2rem;
      height: 80%;
      }
 }
+
+/*Página del disco*/
+
+@media (min-width: 768px){
+     .disco{
+
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+
+     }
+}
+
+
+@media (min-width: 768px){
+     .discoimg{
+
+        width: 30rem;
+        height: 30rem;
+        margin-left: 20rem;
+      
+     }
+}
+
+.nombre{
+
+    text-align: center;
+}
+@media (min-width: 768px){
+     .nombre{
+
+        text-align: left;
+     }
+}
+
+.formulario{
+    
+    display: grid;
+
+    
+    
+}
+
+
+@media (min-width: 768px){
+
+    .formulario{
+    
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+        
+        
+    }
+
+     
+}
+
+
+.camposubmit{ /*botón Agregar al carrito*/
+
+    background-color: var(--submit);
+    border: none;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    padding: 2rem;
+    transition: background-color .3s ease;
+    grid-column: 1/3; /*que abarque el tamaño de los 2 campos*/
+    margin:2rem;
+   
+}
+@media (min-width: 768px){
+     .camposubmit{
+
+         margin: 0;
+
+     }
+
+}
+.camposubmit:hover{
+
+    cursor: pointer;
+    background-color: var(--sombrasubmit);
+
+}
+ .campo{
+
+    border: 1rem solid var(--colorNavegacion);
+    background-color: var(--colorPrincipal);
+    color: var(--blanco);
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;/*le saca la flechita al select de versión*/
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
